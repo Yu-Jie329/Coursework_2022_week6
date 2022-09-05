@@ -1,0 +1,77 @@
+//線條(偽元素)
+.border-bottom-primary {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 3px;
+        background-color: $primary;
+    }
+}
+.border-left-bottom-primary {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 3px;
+        background-color: $primary;
+    }
+    @media (min-width: 992px) {
+        &::after {
+            left: 0;
+            transform: translate(0,0);
+        }
+    }
+}
+.border-bottom-white {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 3px;
+        background-color: $primary;
+    }
+    @media (min-width: 768px) {
+        &::after {
+            background-color: $white;
+        }
+    }
+    @media (min-width: 992px) {
+        &::after {
+            left: 0;
+            transform: translate(0,0);
+            background-color: $white;
+        }
+    }
+}
+
+//borders
+.border-transparent {
+    border: 1px solid transparent;
+}
+.border-transparent-2 {
+    border: 2px solid transparent;
+}
+.rounded-5 {
+    border-radius: .5rem; //8px
+}
+.rounded-7 {
+    border-radius: .75rem; //12px
+}
+.rounded-15 {
+    border-radius: 1.5rem; //24px
+}
