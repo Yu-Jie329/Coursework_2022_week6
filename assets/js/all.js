@@ -1,11 +1,12 @@
-$(document).ready(function() {
-  $('.showmenu').on('click',  function(e){
-     e.preventDefault();
-     $('body').toggleClass('menu-show');
- });
-});
+"use strict";
 
-//index的學習程式
+$(document).ready(function () {
+  $('.showmenu').on('click', function (e) {
+    e.preventDefault();
+    $('body').toggleClass('menu-show');
+  });
+}); //index的學習程式
+
 var swiper = new Swiper(".mySwiper", {
   autoplay: {
     disableOnInteraction: false,
@@ -31,10 +32,9 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 8,
       spaceBetween: 16
     }
-  },
-});
+  }
+}); //index的專屬你的學習課程 超過 3000 位學員得到了程式超能力
 
-//index的專屬你的學習課程 超過 3000 位學員得到了程式超能力
 var swiper = new Swiper(".mySwiper2", {
   effect: 'fade',
   fadeEffect: {
@@ -42,14 +42,13 @@ var swiper = new Swiper(".mySwiper2", {
   },
   navigation: {
     nextEl: ".function-next",
-    prevEl: ".function-prev",
+    prevEl: ".function-prev"
   },
   pagination: {
-    el: ".function-pagination",
-  },
-});
+    el: ".function-pagination"
+  }
+}); //class的所有課程
 
-//class的所有課程
 var swiper = new Swiper(".mySwiper3", {
   direction: 'horizontal',
   loop: false,
@@ -68,6 +67,6 @@ var swiper = new Swiper(".mySwiper3", {
       slidesPerView: 5,
       spaceBetween: 16
     }
-  },
+  }
 });
-
+//# sourceMappingURL=all.js.map
